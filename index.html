@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="Description" content="This is Virginia Tech's fantastic Parkour club website.">
+    <meta name="author" content="Chris Wachtman">
+	<title>Virginia Tech Parkour</title>
+    <link rel="stylesheet" href="styles.css">
+	<script>
+ function reset(){
+         document.getElementById("logo").style.display = "none";
+         document.getElementById("about").style.display = "none";
+         document.getElementById("videos").style.display = "none";
+         document.getElementById("hotspots").style.display = "none";
+         document.getElementById("events").style.display = "none";
+         document.getElementById("join").style.display = "none";
+         document.getElementById("nubz").style.display = "none";
+         document.getElementById("jarvis").style.display = "none";
+         document.getElementById("hai").style.display = "none";
+         document.getElementById("rob").style.display = "none";
+  }
+ function logo(){
+         reset();
+		 document.getElementById("logo").style.display = "block";
+  }
+ function about(){
+         reset();
+         document.getElementById("about").style.display = "block";
+  }
+ function videos(){
+         reset();
+         document.getElementById("videos").style.display = "block";
+  }
+ function hotspots(){
+         reset();
+		 document.getElementById("hotspots").style.display = "block";
+  }
+ function events(){
+         reset();
+         document.getElementById("events").style.display = "block";
+  }
+ function join(){
+         reset();
+         document.getElementById("join").style.display = "block";
+  }
+ function nubz(){
+         reset();
+         document.getElementById("nubz").style.display = "block";
+  }
+ function jarvis(){
+         reset();
+		 document.getElementById("jarvis").style.display = "block";
+  }
+ function hai(){
+         reset();
+         document.getElementById("hai").style.display = "block";
+  }
+ function rob(){
+         reset();
+         document.getElementById("rob").style.display = "block";
+  }
+
+</script>
+</head>
+  <body>
+    <div id="outerbox">
+		<a href="#" onclick="logo()"><h1>Virginia Tech Parkour and Freerunning</h1></a><br><br><br>
+		<div id="innerbox">
+			<!--iframe id="frame" name="frame" src="pages/logo.html" frameBorder="0" marginheight="0" marginwidth="0" style="border:none; overflow:hidden;"scrolling="auto">
+			</iframe-->
+			<div id="logo" style="display: block">
+				<img src="images/VTPKShadow.png" width='750'>
+			</div>
+			<div id="about" style="display: none">
+				<div id="temp">
+					<h3>Welcome</h3>
+					<p>We are a community of people gathered around the discipline and art of movement called Parkour or Freerunning. We strive towards physical and mental strength, respect towards self and others, and a natural movement that has been instilled in the human body since the birth of our species.</p>
+					<h3>What is Parkour?</h3>
+					<p>Parkour is a discipline where its practitioners learn to move throughout their environments safely, efficiently, and gracefully using only their bodies. It's a physical and mental exertion, made to push your limits and open your mind. Control, Repetition, and Progression are key.</p>
+				</div>
+				<div id="temp">
+					<h3>Meet the Leaders</h3>
+					<nav class="inner">
+						<a href="#" onclick="nubz()">Alex Smith</a>
+						<a href="#" onclick="jarvis()">Nick Mason</a>
+						<a href="#" onclick="hai()">Hai Thai</a>
+						<a href="#" onclick="rob()">Rob Saunders</a>
+					</nav>
+				</div>
+				<div id="temp">
+					<h3>Get Started!</h3>
+					<p>Beginner's Sessions are held every <b>Monday night at 9 pm</b>. We meet at the benches by D2. Come meet us and learn some of the basic movements and philosophies of parkour!</p>
+				</div>
+			</div>
+			<div id="videos" style="display: none">
+				<div id="box">
+					<object width="100%" height="99%">
+					<param name="movie" value="http://www.youtube.com/p/235998425FEBA44E?hl=en_US&fs=1"></param>
+					<param name="allowFullScreen" value="true"></param>
+					<param name="allowscriptaccess" value="always"></param>
+					<embed src="http://www.youtube.com/p/235998425FEBA44E?hl=en_US&fs=1" type="application/x-shockwave-flash" width="100%" height="400px" allowscriptaccess="always" allowfullscreen="true"></embed>
+					</object>
+				</div>
+			</div>
+			<div id="hotspots" style="display: none">
+				<div id="box2">
+					<iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=102677119163177190242.00047565418a47d63dda9&amp;ll=37.228142,-80.422239&amp;spn=0.006834,0.011544&amp;z=15&amp;output=embed"></iframe>
+				</div>
+			</div>
+			<div id="events" style="display: none">
+				<div id="box2">
+					<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=3be2mp14b9i3gv11h44k81pnos%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=America%2FNew_York" style=" border-width:0 " width="100%" height="400px"></iframe>
+				</div>
+			</div>
+			<div id="join" style="display: none">
+				<div id="temp">
+					<h3>Get Started!</h3>
+					<p>Beginner's Sessions are held every <b>Monday night at 9 pm</b>. We meet at the benches by D2. Come meet us and learn some of the basic movements and philosophies of parkour!</p>
+					<h3>Who Can Join?</h3>
+					<p><strong>Anyone can join!</strong><br>
+					No experience or skill level required.</p>
+					<h3>Get in the Facebook Group</h3>
+					<center><a href='http://www.facebook.com/groups/145287698896548' target="_blank"><img src='http://findicons.com/files/icons/1594/social_media_icons_2_0/128/facebook.png'></a></center>
+					
+				</div>
+				<div id="email">
+					<h3>Get on Our Email List</h3>
+					<p>Join to get info about jams and other club activity.</p>
+					<p>To join, simply send an email to<br>
+					<strong>listserv@listserv.vt.edu</strong><br>
+					with the following in the body of the email:<br>
+					<strong>subscribe parkour [First Last]</strong><br>
+					(Replace [First Last] with your name.)</p>
+					
+					<p>Once added, you can send email to and recieve email from "parkour@listserv.vt.edu". What you send to this address goes out to the whole group.</p>
+					
+					<p>To unsubscribe, simply send an email to<br>
+					<strong>listserv@listserv.vt.edu</strong><br>
+					with the following in the body of the email:<br>
+					<strong>signoff parkour</strong><br>
+					(Do not confuse "listserv@listserv.vt.edu" with "parkour@listserv.vt.edu")</p>
+				</div>
+			</div>
+			<div id="nubz" style="display: none">
+				<div id="biopic">
+					<img src="http://a1.sphotos.ak.fbcdn.net/hphotos-ak-snc6/179869_1561285603342_1571370026_31201649_6086787_n.jpg" alt="nubz!" border="1" height="385px" align="right"/>
+				</div>
+				<div id="bio">
+					<h1>Alex Smith 'Nubz'</h1><br><br>
+					<p><strong>Email: smith913@vt.edu</strong></p>
+				</div>
+				<div id="bio">
+					<p>I'm Alex, but feel free to call me Nubz. Within VTPK, I will be your fearless leader. I'm a pro at sweet jumps, not to mention I have a LEET understanding of the human body as well as the Virginia Tech campus. Follow me in your training, and you will achieve greatness!</p>
+					<p>Special Move: Mega Precision Jump!</p>
+					<p>As seen on Facebook. <a href="http://www.facebook.com/profile.php?id=6234166" target="_"><img src='http://findicons.com/files/icons/2155/social_media_bookmark/32/facebook.png'></a></p>
+				</div>
+			</div>
+			<div id="jarvis" style="display: none">
+				<div id="biopic">
+					<img src="http://a2.sphotos.ak.fbcdn.net/photos-ak-ash1/v253/106/38/772398775/n772398775_832425_2317.jpg"border="1" height="385px" align="right"/>
+				</div>
+				<div id="bio">
+					<h1>Nick 'Jarvis' Mason</h1><br><br>
+					<p><strong>Email: masonnj@vt.edu</strong></p>
+				</div>
+				<div id="bio">
+					<p>Hey, my name is Nick, but most people call me Jarvis.  I like jumping on stuff,
+						jumping off stuff, climbing stuff, and swinging on stuff.  If you do too, we
+						should hang out.  I can't wait to jam and train with all of you!!</p>
+					<p>Favorite quote: Power is nothing without control <br />
+						Other things I like: Cru, NLCF, soccer, hiking, food <br />
+						Special Moves: the twisty mcjarvis</p>
+						<p> Check out my facebook!<a href="http://www.facebook.com/profile.php?id=772398775" target="_"><img src='http://findicons.com/files/icons/2155/social_media_bookmark/32/facebook.png'></a></p>
+				</div>
+			</div>
+			<div id="hai" style="display: none">
+				<div id="biopic">
+					<img src="http://a8.sphotos.ak.fbcdn.net/hphotos-ak-snc6/222439_1694658097571_1571370026_31367889_6143154_n.jpg" border="1" height="385px" align="right"/>
+				</div>
+				<div id="bio">
+					<h1>Hai Thai</h1><br><br>
+					<p><strong>Email: hthai@vt.edu</strong></p>
+				</div>
+				<div id="bio">
+					<p>My name is Hai, and I have many nicknames. Hi-C, HighTide, Hydra, and Hai-Tee-Hai are just a few.</p>
+					<p>You wanna learn more about me? Then come out to a jam and say Hai.</p>
+						<p> Also facebook: <a href="http://www.facebook.com/profile.php?id=15615096" target="_"><img src='http://findicons.com/files/icons/2155/social_media_bookmark/32/facebook.png'></a></p>
+				</div>
+			</div>
+			<div id="rob" style="display: none">
+				<div id="biopic">
+					<img src="http://a4.sphotos.ak.fbcdn.net/hphotos-ak-ash1/180611_1781731750552_1457190648_31917364_7127431_n.jpg"border="1" height="385px" align="right"/>
+				</div>
+				<div id="bio">
+					<h1>Robert Saunders</h1><br><br>
+					<p><strong>Email: rns294@vt.edu</strong></p>
+				</div>
+				<div id="bio">
+					<p>I'm Rob. Look for me at the Wednesday Night Workout sessions. I will guide you through the conditioning that will sculpt your body to help you improve and practice parkour sustainably.</a></p>
+					<p>You can also find me on Facebook:<a href="http://www.facebook.com/profile.php?id=15615096"><img src='http://findicons.com/files/icons/2155/social_media_bookmark/32/facebook.png'></a></p>
+				</div>
+			</div>
+		</div>
+		<nav>
+			<a href="#" onclick="about()">About</a>
+			<a href="#" onclick="videos()">Videos</a>
+			<a href="#" onclick="hotspots()">Hotspots</a>
+			<a href="#" onclick="events()">Events</a>
+			<a href="#" onclick="join()">Join Us!</a>
+		</nav><br><br>
+	 </div>
+  </body>
+</html>
