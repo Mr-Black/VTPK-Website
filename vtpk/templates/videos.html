@@ -1,0 +1,17 @@
+{% extends "google-api-base.html" %}
+{% block title %}Videos{% endblock title %}
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/videos.css') }}">
+{% endblock head %}
+{% block content %}
+  <div id="videos-loading"></div>
+  <div id="videos-container">
+    <ol id="videos">
+    </ol>
+  </div>
+{% endblock content %}
+{% block scripts %}
+  <script src="{{ url_for('static', filename='js/videos.js') }}"></script>
+  {{ super() }}
+{% endblock scripts %}

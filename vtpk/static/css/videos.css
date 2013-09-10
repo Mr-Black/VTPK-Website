@@ -1,0 +1,13 @@
+ol {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+ol > li {
+  padding-top: 30px;
+}
+
+#content {
+  text-align: center;
+}

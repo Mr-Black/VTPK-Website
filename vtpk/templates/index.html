@@ -1,0 +1,46 @@
+{% extends "google-api-base.html" %}
+{% block title %}Home{% endblock title %}
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock head %}
+{% block content %}
+  <div id="events" class="index-content">
+    <h2><a href="https://www.google.com/calendar/embed?src=3be2mp14b9i3gv11h44k81pnos%40group.calendar.google.com&ctz=America/New_York" target="blank_">Upcoming Events</a></h2>
+    <div id="events-loading"></div>
+    <ol id="events-list">
+    </ol>
+    <a href id="showMoreEvents">Show More</a>
+  </div>
+
+  <!-- Twitter Stuff -->
+  <!--<style>
+  #twitter-widget-0 { width: 800px; }
+  </style>
+  <a class="twitter-timeline" href="https://twitter.com/ParkourVT" data-widget-id="366334347613188096">Tweets by @ParkourVT</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>-->
+ 
+  <div id="tweets" class="index-content">
+    <h2><a href="https://twitter.com/ParkourVT" target="blank_">VTPK Twitter Feed</a></h2>
+    <div id="tw-feed-loading"></div>
+    <ol id="tw-feed">
+    </ol>
+    <a href id="showMoreTweets">Show More</a>
+  </div>
+
+  <div id="facebook" class="index-content">
+    <h2><a href="">VTPK Facebook Group Wall</a></h2>
+    <div id="fb-wall-loading"></div>
+    <ol id="fb-wall">
+    </ol>
+    <a href id="showMoreWall">Show More</a>
+  </div>
+{% endblock content %}
+{% block scripts %}
+  <script>
+    SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+  </script>
+  <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/calendar.js') }}"></script>
+  {{ super () }}
+{% endblock scripts %}
